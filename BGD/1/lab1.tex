@@ -1,0 +1,44 @@
+\documentclass[12pt,utf8,a4paper,russian,emptystyle,floatsingle]{eskdtext}
+\pagestyle{plain}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage[russian]{babel}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{scalefnt}
+\usepackage{indentfirst}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{geometry}
+\geometry{left=2cm}
+\geometry{right=1.5cm}
+\geometry{top=1cm}
+\geometry{bottom=2cm}
+\frenchspacing
+
+\parindent=.5cm
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\ESKDsectStyle{section}{\bfseries \normalsize \raggedright}
+\ESKDsectStyle{subsection}{\bfseries \normalsize \raggedright}
+\ESKDsectStyle{subsubsection}{\bfseries \normalsize \raggedright}
+\ESKDsectSkip{section}{4mm}{4mm}
+\ESKDsectSkip{subsection}{4mm}{4mm}
+\ESKDsectSkip{subsubsection}{4mm}{4mm}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theenumi}{\arabic{enumi}}
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+			{\hbox{$\mathsurround=0pt #1$}}{}}
+
+\begin{document}
+	\input{main.tex}
+\end{document}

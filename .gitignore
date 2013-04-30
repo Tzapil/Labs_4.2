@@ -1,0 +1,6 @@
+/openCV
+*.log
+*.out
+*.gz
+*.aux
+

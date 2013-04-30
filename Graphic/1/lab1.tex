@@ -1,0 +1,56 @@
+\documentclass[12pt,utf8,a4paper,russian,emptystyle,floatsingle]{eskdtext}
+\pagestyle{plain}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage[russian]{babel}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{textcomp}
+\usepackage{listings}
+\lstloadlanguages{C,[ANSI]C++}
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  %frame=L,
+  %xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+  morekeywords={QPainter, abs, max2, min2, sign, putPixel4Circle, putPixel8Circle},
+}
+
+\lstset{escapechar=@,style=customc}
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{scalefnt}
+\usepackage{indentfirst}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{left=2cm}
+\geometry{right=1.5cm}
+\geometry{top=1cm}
+\geometry{bottom=2cm}
+\frenchspacing
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\ESKDsectStyle{section}{\bfseries \normalsize \raggedright}
+\ESKDsectStyle{subsection}{\bfseries \normalsize \raggedright}
+\ESKDsectStyle{subsubsection}{\bfseries \normalsize \raggedright}
+\ESKDsectSkip{section}{4mm}{4mm}
+\ESKDsectSkip{subsection}{4mm}{4mm}
+\ESKDsectSkip{subsubsection}{4mm}{4mm}
+
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theenumi}{\arabic{enumi}}
+
+\begin{document}
+	\input{titlepage.tex}
+	\input{main.tex}
+\end{document}
